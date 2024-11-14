@@ -1,0 +1,232 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Java 基础 · 佘叔叔 (Uncle She) 个人博客</title><meta name="description" content="Java 基础 - UncleShe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/blog/favicon.png"><link id="theme-style" rel="stylesheet" href="/blog/css/apollo-dark.css"><link rel="search" type="application/opensearchdescription+xml" href="https://uncle.im/blog/atom.xml" title="佘叔叔 (Uncle She) 个人博客"><meta name="generator" content="Hexo 4.2.1"></head><body><div class="wrap"><header><a href="/blog/" class="logo-link"><img src="/blog/assets/images/avatar.jpeg" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/blog/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/blog/atom.xml" target="_self" class="nav-list-link">RSS</a></li><li class="nav-list-item"><button id="theme-toggle" type="button" title="明亮 / 暗黑模式" aria-label="明亮 / 暗黑模式" aria-live="polite" class="clean-btn toggleButton"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Java 基础</h1><div class="post-info">2020年1月1日</div><div class="post-content"><h2 id="基本类型">基本类型</h2>
+<figure>
+<img src="assets/Java基础_20190513-110011.png" alt="primitive bytes" />
+<figcaption aria-hidden="true">primitive bytes</figcaption>
+</figure>
+<ol type="1">
+<li><p>浮点数</p>
+<ul>
+<li><code>float</code> 是单精度浮点数，内存分配 4 个字节，占 32
+位，有效小数位 6 - 7 位</li>
+<li><code>double</code> 是双精度浮点数，内存分配 8 个字节，占 64
+位，有效小数位 15 位</li>
+<li><strong>默认声明的小数是 double 类型的</strong>， 如
+<code>double d=4.0</code> 如果声明：<code>float x = 4.0</code>则会报错，
+需要如下写法：<code>float x = 4.0f</code>或者<code>float x = (float)4.0</code>
+其中 <code>4.0f</code> 后面的 <code>f</code> 只是为了区别
+<code>double</code>，并不代表任何数字上的意义</li>
+</ul></li>
+</ol>
+<h2 id="java-中的数组">Java 中的数组</h2>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">String[] strs = <span class="keyword">new</span> String[<span class="number">3</span>];</span><br><span class="line">String[] strs = &#123;<span class="string">"aa"</span>, <span class="string">"bb"</span>, <span class="string">"cc"</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 二维数组</span></span><br><span class="line">String[][] str2d = <span class="keyword">new</span> String[<span class="number">2</span>][<span class="number">2</span>];</span><br><span class="line"></span><br><span class="line">String[][] str2d = <span class="keyword">new</span> String[<span class="number">2</span>][];</span><br><span class="line">str2d[<span class="number">0</span>] = <span class="keyword">new</span> String[] &#123;<span class="string">"aa"</span>, <span class="string">"bb"</span>&#125;;</span><br><span class="line">str2d[<span class="number">1</span>] = <span class="keyword">new</span> String[<span class="number">4</span>];</span><br><span class="line"></span><br><span class="line">String[][] str2d = &#123;</span><br><span class="line">    &#123;<span class="string">"aa"</span>, <span class="string">"bb"</span>&#125;,</span><br><span class="line">    &#123;<span class="string">"aaa"</span>, <span class="string">"bbb"</span>&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 数组也是一个对象</span></span><br><span class="line"><span class="comment">// 有 .length 成员</span></span><br><span class="line"><span class="comment">// 有 .clone() 方法</span></span><br></pre></td></tr></table></figure>
+<h2 id="hashcode-compareto-equals">hashCode / compareTo / equals</h2>
+<h3 id="hashcode-for-operation-in-hashmap-hashtable-hashset">hashCode :
+for operation in HashMap / HashTable / HashSet</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">hashCode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> result = aString != <span class="keyword">null</span> ? aString.hashCode() : <span class="number">0</span>;</span><br><span class="line">    result = <span class="number">31</span> * result + (aLong != <span class="keyword">null</span> ? aLong.hashCode() : <span class="number">0</span>);</span><br><span class="line">    result = <span class="number">31</span> * result + (aClassObject != <span class="keyword">null</span> ? aClassObject.hashCode() : <span class="number">0</span>);</span><br><span class="line">    result = <span class="number">31</span> * result + primitiveInt;</span><br><span class="line">    result = <span class="number">31</span> * result + (primitiveFloat != +<span class="number">0.0f</span> ? Float.floatToIntBits(primitiveFloat) : <span class="number">0</span>);</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="compareto-为了顺序实现-java.lang.comparablet-接口">compareTo :
+为了顺序，实现 <code>java.lang.Comparable&lt;T&gt;</code> 接口</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compareTo</span><span class="params">(Account aThat)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">int</span> BEFORE = -<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">int</span> EQUAL = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">int</span> AFTER = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//this optimization is usually worthwhile, and can</span></span><br><span class="line">    <span class="comment">//always be added</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span> == aThat) <span class="keyword">return</span> EQUAL;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//primitive numbers follow this form</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.fAccountNumber &lt; aThat.fAccountNumber) <span class="keyword">return</span> BEFORE;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.fAccountNumber &gt; aThat.fAccountNumber) <span class="keyword">return</span> AFTER;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//booleans follow this form</span></span><br><span class="line">    <span class="keyword">if</span> (!<span class="keyword">this</span>.fIsNewAccount &amp;&amp; aThat.fIsNewAccount) <span class="keyword">return</span> BEFORE;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.fIsNewAccount &amp;&amp; !aThat.fIsNewAccount) <span class="keyword">return</span> AFTER;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//objects, including type-safe enums, follow this form</span></span><br><span class="line">    <span class="comment">//note that null objects will throw an exception here</span></span><br><span class="line">    <span class="keyword">int</span> comparison = <span class="keyword">this</span>.fAccountType.compareTo(aThat.fAccountType);</span><br><span class="line">    <span class="keyword">if</span> (comparison != EQUAL) <span class="keyword">return</span> comparison;</span><br><span class="line"></span><br><span class="line">    comparison = <span class="keyword">this</span>.fLastName.compareTo(aThat.fLastName);</span><br><span class="line">    <span class="keyword">if</span> (comparison != EQUAL) <span class="keyword">return</span> comparison;</span><br><span class="line"></span><br><span class="line">    comparison = <span class="keyword">this</span>.fFirstName.compareTo(aThat.fFirstName);</span><br><span class="line">    <span class="keyword">if</span> (comparison != EQUAL) <span class="keyword">return</span> comparison;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.fBalance &lt; aThat.fBalance) <span class="keyword">return</span> BEFORE;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.fBalance &gt; aThat.fBalance) <span class="keyword">return</span> AFTER;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//all comparisons have yielded equality</span></span><br><span class="line">    <span class="comment">//verify that compareTo is consistent with equals (optional)</span></span><br><span class="line">    <span class="keyword">assert</span> <span class="keyword">this</span>.equals(aThat) : <span class="string">"compareTo inconsistent with equals."</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> EQUAL;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="equals-主要用于-collections-api">equals 主要用于 Collections
+API</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object o)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span> == o) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    <span class="keyword">if</span> (o == <span class="keyword">null</span> || getClass() != o.getClass()) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">    TestClass testClass = (TestClass) o;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (primitiveInt != testClass.primitiveInt) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    <span class="keyword">if</span> (primitiveFloat != testClass.primitiveFloat) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!Objects.equals(aString, testClass.aString)) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    <span class="keyword">if</span> (!Objects.equals(aLong, testClass.aLong)) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    <span class="keyword">return</span> Objects.equals(aClassObject, testClass.aClassObject);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="exception">Exception</h2>
+<ol type="1">
+<li><p>继承关系</p>
+<figure>
+<img src="assets/Java基础_20190528-200107.png" alt="Exception" />
+<figcaption aria-hidden="true">Exception</figcaption>
+</figure></li>
+<li><p>Checked Exception / Unchecked Exception</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">            ---&gt; Throwable  &lt;---</span><br><span class="line">            |   (checked)       |</span><br><span class="line">            |                   |</span><br><span class="line">            |                   |</span><br><span class="line">    ---&gt; Exception           Error</span><br><span class="line">    |    (checked)        (unchecked)</span><br><span class="line">    |</span><br><span class="line">RuntimeException</span><br><span class="line">(unchecked)</span><br></pre></td></tr></table></figure></p></li>
+<li><p>Checked Exceptions（如：IOException）must check</p></li>
+<li><p>Unchecked Exceptions</p></li>
+<li><p>Errors：如 <code>StackOverflowError</code> and
+<code>OutOfMemoryError</code></p></li>
+<li><p>子类 can throw 比父类更少 checked exceptions，不能更多</p></li>
+<li><p>try-with-resources</p>
+<p>Java 7 后，我们可以使用简单的语法来使用 extend AutoCloseable
+的资源，资源将会自动的 close</p>
+<p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> (Scanner contents = <span class="keyword">new</span> Scanner(<span class="keyword">new</span> File(playerFile))) &#123;</span><br><span class="line">    <span class="keyword">return</span> Integer.parseInt(contents.nextLine());</span><br><span class="line">&#125; <span class="keyword">catch</span> (FileNotFoundException e ) &#123;</span><br><span class="line">    logger.warn(<span class="string">"File not found, resetting score."</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p></li>
+</ol>
+<h2 id="overide-vs-overload-overide-注解">Overide vs Overload + <span
+class="citation" data-cites="Overide">@Overide</span> 注解</h2>
+<h2 id="类的加载顺序">类的加载顺序</h2>
+<p><a
+href="https://blog.csdn.net/weixin_37766296/article/details/80545283"
+class="uri">https://blog.csdn.net/weixin_37766296/article/details/80545283</a></p>
+<h2 id="java-线程">Java 线程</h2>
+<h3 id="线程的生命周期">线程的生命周期</h3>
+<figure>
+<img src="assets/Java基础_20190509-175029.png" alt="Thread State" />
+<figcaption aria-hidden="true">Thread State</figcaption>
+</figure>
+<figure>
+<img src="assets/Java基础_20190509-175046.png" alt="Runable State" />
+<figcaption aria-hidden="true">Runable State</figcaption>
+</figure>
+<h3 id="daemon-thread-vs-user-thread">Daemon thread vs User thread</h3>
+<blockquote>
+<p>A daemon thread is a thread that does not prevent the JVM from
+exiting when the program finishes but the thread is still running. An
+example for a daemon thread is the garbage collection.`</p>
+</blockquote>
+<p>主线程结束后，如果只有 Daemon threads，Daemon threads
+自动退出，程序结束。</p>
+<p>优先级：User thread &gt; Daemon Thread</p>
+<p>You can use the <code>setDaemon(boolean)</code> method to change the
+<code>Thread</code> daemon properties before the thread starts.</p>
+<h3 id="thread.sleepms-vs-threa.yield"><code>Thread.sleep(ms)</code> vs
+<code>Threa.yield()</code></h3>
+<ul>
+<li><p><code>sleep()</code></p>
+<blockquote>
+<p>Causes the thread to definitely stop executing for a given amount of
+time; if no other thread or process needs to be run, the CPU will be
+idle (and probably enter a power saving mode).</p>
+</blockquote></li>
+<li><p><code>yield()</code></p>
+<blockquote>
+<p>Basically means that the thread is not doing anything particularly
+important and if any other threads or processes need to be run, they
+should. Otherwise, the current thread will continue to run.</p>
+</blockquote></li>
+</ul>
+<h3
+id="java.util.concurrent.executors"><code>java.util.concurrent.Executors</code></h3>
+<p>提供一个直接处理任务的层，帮你管理 Thread 对象</p>
+<p>Comand 设计模式</p>
+<h3 id="java-8-lambda">Java 8 Lambda</h3>
+<p>Lambda 对应的接口类型</p>
+<ol type="1">
+<li><p>Java 7 已经存在的</p>
+<ul>
+<li>java.lang.Runnable : () -&gt; {}</li>
+<li>java.util.concurrent.Callable: () -&gt; { return V } , can throw
+exception</li>
+<li>java.security.PrivilegedAction</li>
+<li>java.util.Comparator: (T t1, T t2) -&gt; { return int }</li>
+<li>java.io.FileFilter</li>
+<li>java.beans.PropertyChangeListener</li>
+</ul></li>
+<li><p>Java 8 新增的 <code>java.util.function</code></p>
+<ul>
+<li><code>Predicate&lt;T&gt;</code>——接收 T 对象并返回 boolean</li>
+<li><code>Consumer&lt;T&gt;</code>——接收 T 对象，不返回值</li>
+<li><code>Function&lt;T, R&gt;</code>——接收 T 对象，返回 R 对象</li>
+<li><code>Supplier&lt;T&gt;</code>——提供 T
+对象（例如工厂），不接收值</li>
+<li><code>UnaryOperator&lt;T&gt;</code>——接收 T 对象，返回 T 对象</li>
+<li><code>BinaryOperator&lt;T&gt;</code>——接收两个 T 对象，返回 T
+对象</li>
+</ul></li>
+</ol>
+<h2 id="常用-jvm-参数">常用 JVM 参数</h2>
+<h3 id="gc-相关">GC 相关</h3>
+<ol type="1">
+<li><code>-XX:+PrintGCDetails</code></li>
+<li>``</li>
+</ol>
+<h3 id="堆分配相关">堆分配相关</h3>
+<ol type="1">
+<li><p><code>-Xmx –Xms</code>：指定 Java 堆最大值（默认值是物理内存的
+1/4）和初始 Java 堆最小值（默认值是物理内存的 1/64）</p>
+<p>默认（MinHeapFreeRatio 参数可以调整）空余堆内存小于
+<strong>40%</strong> 时，JVM 就会增大堆直到 <code>-Xmx</code>
+的最大限制， 默认（MaxHeapFreeRatio 参数可以调整）空余堆内存大于
+<strong>70%</strong> 时，JVM 会减少堆直到 <code>-Xms</code>的最小限制。
+开发过程中，<strong>通常会将 <code>-Xms</code> 与 <code>-Xmx</code>
+两个参数的配置相同的值</strong>，其目的是为了能够在 Java
+垃圾回收机制清理完堆区后 不需要重新分隔计算堆区的大小而浪费资源。</p>
+<p><strong>注意：此处设置的是 Java 堆大小，也就是新生代大小 +
+年老代大小</strong></p></li>
+</ol>
+<h3 id="栈的分配相关">栈的分配相关</h3>
+<ol type="1">
+<li><code>-Xss</code></li>
+</ol>
+<h2 id="基本数据结构">基本数据结构</h2>
+<p>Stack Deque, Vector Queue, List, Set Collection</p>
+<p>Map: HashMap, HashTable List: ArrayList, LinkedList</p>
+<h2 id="generic-泛型">Generic 泛型</h2>
+<p><a
+href="https://docs.oracle.com/javase/tutorial/java/generics/index.html">Java
+Generics</a></p>
+<h3 id="为什么需要泛型">为什么需要<strong>泛型</strong></h3>
+<p>使用泛型的代码对比没使用泛型的代码有如下优势：</p>
+<ul>
+<li>编译器的强类型检查</li>
+<li>消除类型强制转换</li>
+<li>允许定义自定义类型、类型安全、易读的泛型算法</li>
+</ul>
+<h3 id="泛型类型">泛型类型</h3>
+<p>一个泛型的类可以通过如下形式定义：</p>
+<p><code>class name&lt;T1, T2, ..., Tn&gt; { /* ... */ }</code></p>
+<p><code>T1, T2, ..., Tn</code> 表示类型的参数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Generic version of the Box class.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &lt;T&gt; the type of the value being boxed</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Box</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">    <span class="comment">// T stands for "Type"</span></span><br><span class="line">    <span class="keyword">private</span> T t;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(T t)</span> </span>&#123; <span class="keyword">this</span>.t = t; &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> T <span class="title">get</span><span class="params">()</span> </span>&#123; <span class="keyword">return</span> t; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>类型变量 T
+可以是任何非原始数据类型的类，包括：任何类类型，接口类型，任何数组类型，甚至是另外一个类型变量。</p>
+<p>可以用同样的方法来创建 <code>泛型接口</code>。</p>
+<h2 id="变更日志">变更日志</h2>
+<ul>
+<li><code>2020.01.01</code> 创建文章</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/blog/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/JVM/Java/mbens.html" class="prev">PREV</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'uncleshe-blog';
+var disqus_identifier = '计算机/编程语言/JVM/Java/基础/Java基础.html';
+var disqus_title = 'Java 基础';
+var disqus_url = 'https://uncle.im/blog/计算机/编程语言/JVM/Java/基础/Java基础.html';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//null.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2024 <a href="https://uncle.im/blog">UncleShe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script type="text/x-mathjax-config">MathJax.Hub.Config({
+tex2jax: {
+   inlineMath: [['$','$'], ['\\(','\\)']],
+   displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+   processEscapes: true
+},
+CommonHTML: {linebreaks: {automatic: true, width:"container" }}
+});</script><script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML" crossorigin="anonymous"></script><script>const themeToggleButton = document.getElementById('theme-toggle');
+const themeStyle = document.getElementById('theme-style');
+
+// 设置 Cookie
+function setCookie(name, value, days) {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/';
+}
+
+// 获取 Cookie
+function getCookie(name) {
+    return document.cookie.split('; ').reduce((r, v) => {
+        const parts = v.split('=');
+        return parts[0] === name ? decodeURIComponent(parts[1]) : r;
+    }, '');
+}
+
+function setTheme(name) {
+    if (name === 'dark') {
+        themeStyle.setAttribute('href', "/blog/css/apollo-dark.css");
+    } else {
+        themeStyle.setAttribute('href', "/blog/css/apollo.css");
+    }
+}
+
+const currentTheme = getCookie('theme');
+if (currentTheme) {
+    setTheme(currentTheme);
+}
+
+if (themeToggleButton && themeStyle) {
+    themeToggleButton.addEventListener('click', () => {
+        var theme = "";
+        if (themeStyle.getAttribute('href').endsWith('apollo-dark.css')) {
+            newTheme = "light";
+        } else {
+            newTheme = "dark";
+        }
+        setTheme(newTheme);
+        setCookie('theme', newTheme, 7); // 设置 Cookie，有效期为 7 天
+    });
+} else {
+    console.error('无法找到主题切换按钮或样式表链接。');
+}
+</script></body></html>
