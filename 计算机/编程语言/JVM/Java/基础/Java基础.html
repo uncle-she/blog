@@ -170,15 +170,22 @@ Generics</a></p>
 <ul>
 <li><code>2020.01.01</code> 创建文章</li>
 </ul>
-</div></article></div></main><footer><div class="paginator"></div><div id="disqus_thread"></div><script>var disqus_shortname = 'uncleshe-blog';
+</div></article></div></main><footer><div class="paginator"></div><div id="disqus_thread"></div><script>var disqus_shortname = 'uncle-shes-blog';
 var disqus_identifier = '计算机/编程语言/JVM/Java/基础/Java基础.html';
 var disqus_title = 'Java 基础';
 var disqus_url = 'https://uncle.im/blog/计算机/编程语言/JVM/Java/基础/Java基础.html';
-(function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();</script><script id="dsq-count-scr" src="//null.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2024 <a href="https://uncle.im/blog">UncleShe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script type="text/x-mathjax-config">MathJax.Hub.Config({
+
+var disqus_config = function () {
+    this.page.url = disqus_url;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = disqus_identifier; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://'+ disqus_shortname + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();</script><script id="dsq-count-scr" src="//uncle-shes-blog.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2024 <a href="https://uncle.im/blog">UncleShe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script type="text/x-mathjax-config">MathJax.Hub.Config({
 tex2jax: {
    inlineMath: [['$','$'], ['\\(','\\)']],
    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
