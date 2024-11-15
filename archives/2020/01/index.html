@@ -45,6 +45,9 @@ if (themeToggleButton && themeStyle) {
         }
         setTheme(newTheme);
         setCookie('theme', newTheme, 7); // 设置 Cookie，有效期为 7 天
+        if (typeof DISQUS !== 'undefined') {
+            location.reload();
+        }
     });
 } else {
     console.error('无法找到主题切换按钮或样式表链接。');
