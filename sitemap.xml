@@ -2,17 +2,88 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://uncle.im/blog/%25E4%25B8%2593%25E9%25A2%2598/%25E6%258A%2598%25E8%2585%25BE/%25E6%25A1%258C%25E9%259D%25A2%25E7%259B%25B8%25E5%2585%25B3/%25E6%25A1%258C%25E9%259D%25A2%25E6%2597%25B6%25E9%2597%25B4.html</loc>
+    <loc>https://uncle.im/blog/%E4%B8%93%E9%A2%98/%E6%8A%98%E8%85%BE/%E6%A1%8C%E9%9D%A2%E7%9B%B8%E5%85%B3/%E6%A1%8C%E9%9D%A2%E6%97%B6%E9%97%B4.html</loc>
     
-    <lastmod>2024-11-15T11:33:45.104Z</lastmod>
+    <lastmod>2024-11-18</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://uncle.im/blog/%25E8%25AE%25A1%25E7%25AE%2597%25E6%259C%25BA/%25E7%25BC%2596%25E7%25A8%258B%25E8%25AF%25AD%25E8%25A8%2580/JVM/Java/%25E5%259F%25BA%25E7%25A1%2580/Java%25E5%259F%25BA%25E7%25A1%2580.html</loc>
+    <loc>https://uncle.im/blog/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/JVM/Java/%E5%9F%BA%E7%A1%80/Java%E5%9F%BA%E7%A1%80.html</loc>
     
-    <lastmod>2024-05-23T11:15:19.000Z</lastmod>
+    <lastmod>2024-05-23</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  <url>
+    <loc>https://uncle.im/blog</loc>
+    <lastmod>2024-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+
+  
+  <url>
+    <loc>https://uncle.im/blog/%E4%B8%93%E9%A2%98/</loc>
+    <lastmod>2024-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://uncle.im/blog/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
+    <lastmod>2024-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://uncle.im/blog/%E4%B8%93%E9%A2%98/%E6%8A%98%E8%85%BE/</loc>
+    <lastmod>2024-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://uncle.im/blog/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</loc>
+    <lastmod>2024-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://uncle.im/blog/%E4%B8%93%E9%A2%98/%E6%8A%98%E8%85%BE/%E6%A1%8C%E9%9D%A2%E7%9B%B8%E5%85%B3/</loc>
+    <lastmod>2024-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://uncle.im/blog/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/JVM/</loc>
+    <lastmod>2024-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://uncle.im/blog/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/JVM/Java/</loc>
+    <lastmod>2024-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://uncle.im/blog/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/JVM/Java/%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2024-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
 </urlset>
